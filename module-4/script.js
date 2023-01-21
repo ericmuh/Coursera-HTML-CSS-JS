@@ -65,8 +65,8 @@ for (let i = 0; i < names.length; i++) {
   // in the loop. Otherwise, call helloSpeaker's 'speak' method with the current
   // name in the loop.
   if (names[i].charAt(0) === "J" || names[i].charAt(0) === "j") {
-    console.log("Good Bye " + names[i]);
+    byeSpeaker.speak(names[i])
   } else {
-    console.log("Hello " + names[i]);
+    helloSpeaker.speak(names[i])
   }
 }

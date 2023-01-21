@@ -12,7 +12,7 @@
 // var helloSpeaker =
 
 // create an object called 'helloSpeaker'
-const helloSpeaker = {
+var helloSpeaker = {
 
     
 };
@@ -23,7 +23,7 @@ const helloSpeaker = {
 
 
 // DO NOT attach the speakWord variable to the 'helloSpeaker' object.
-var speakWord = "Hello";
+var speakWord = "Hello ";
 
 // STEP 4: Rewrite the 'speak' function such that it is attached to the
 // helloSpeaker object instead of being a standalone function.
@@ -33,7 +33,7 @@ var speakWord = "Hello";
 // }
 // attach the speak method to the helloSpeaker object
 helloSpeaker.speak = function(name) {
-    console.log("Hello " + name);
+    console.log(speakWord + name);
 }
 // STEP 5: Expose the 'helloSpeaker' object to the global scope. Name it
 // 'helloSpeaker' on the global scope as well.
